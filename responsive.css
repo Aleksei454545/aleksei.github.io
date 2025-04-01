@@ -1,0 +1,249 @@
+/* Файл responsive.css */
+
+/* Responsive styles for 1600px screens */
+@media (max-width: 1600px) {
+    .bg {
+        padding: 2vh 15vw;
+    }
+    .opis, .opis2 {
+        padding-left: 300px;
+    }
+    .Union2 {
+        padding-left: 800px;
+    }
+    .Rost {
+        padding-left: 250px;
+    }
+    .but1 {
+        padding-left: 450px;
+    }
+    .cards {
+        gap: 150px;
+    }
+    .bg3{
+        padding-bottom: 5%;
+    }
+}
+
+/* Для екранів шириною до 1480px */
+@media (max-width: 1480px) {
+    .bg {
+        padding: 2vh 10vw;
+    }
+    .opis, .opis2 {
+        padding-left: 200px;
+    }
+    .Union2 {
+        padding-left: 700px;
+    }
+    .Rost {
+        padding-left: 200px;
+    }
+}
+
+/* Для екранів шириною до 1280px */
+@media (max-width: 1280px) {
+    .opis, .opis2 {
+        width: 90%;
+        padding-left: 100px;
+    }
+    .Union2 {
+        padding-left: 500px;
+    }
+    .Rost {
+        padding-left: 100px;
+    }
+    .cards {
+        gap: 100px;
+    }
+    .Text4{
+        display: block;
+        margin: 0 auto;
+    }
+    .three {    
+        width: 100%;
+    }
+
+}
+
+
+/* Для планшетів (iPad) */
+@media (max-width: 1024px) {
+    .header-text h1 {
+        font-size: 36px;
+    }
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+    .search {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .header-text button {
+        font-size: 14px;
+        padding: 0.8rem 1.5rem;
+    }
+    .tags {
+        gap: 60px;
+    }
+    .opis, .opis2 {
+        width: 80%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .Union2, .Rost {
+        display: none;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 50%;
+    }
+    .Text4{
+        padding: 0%;
+        width: 100%;
+    }
+    .ts2{
+        padding-left: -320px;
+    }
+    .Text4{
+        text-align: center;
+
+    }
+    .bg3{
+        padding-bottom: 10%;
+    }
+}
+
+/* Для мобільних телефонів (iPhone X, iPhone 8, 7, 6) */
+@media (max-width: 768px) {
+    .bg {
+        padding: 5vh 5vw;
+    }
+    .header-text h1 {
+        font-size: 28px;
+    }
+    .header-text button {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+    }
+    .podmeny nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tags {
+        gap: 20px;
+    }
+    .podfuter nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+
+    .header-text h1{
+        margin-top: -1rem;
+    }
+    .social-icons {
+        padding-right: 7%;
+        padding-top: 5%;
+    }
+    .podfuter{
+        display: block;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    .bg3{
+        padding-bottom: 70%;
+    }
+    .captcha-container {
+        display: block;
+    }
+    .captcha-code {
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    .captcha-input {    
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .captcha-button {
+        width: 100%;
+    }
+
+}
+@media (max-width: 600px) {
+    .bg3{
+        padding-bottom: 100%;
+    }
+}
+/* Для маленьких телефонів (iPhone 4) */
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 24px;
+    }
+    .header-text button {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+    .tags {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .podfuter nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Text4 {
+        padding: 0 0% ;
+        display: block;
+        font-size: 36px;
+    }
+    .p{
+        width: 100%;
+    }
+    .image-section img{
+        width: 90%;
+        padding-left: 5%;
+    }
+    .bg3{
+        padding-bottom: 110%;
+        width: 100%;
+    }
+    .container2 {
+        display: block;
+        text-align: center;
+    }
+    .highlight-box {
+
+        padding-left: 5%;
+        width: 100%;
+    }
+    .butleft{
+        display: block;
+
+    }
+    .btn3{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 320px){
+    .h1{
+        width: 80%;
+    }
+    .bg3{
+        padding-bottom: 170%;
+        align-items: center;
+    }
+    .gallery {
+        padding-left: 13%;
+    }
+
+
+
+}
