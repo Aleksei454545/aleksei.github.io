@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomatoAll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js" defer></script>
+    <link rel="img" type="image/png" href="img/Logo.png">
+</head>
+<body>
+    <div class="Tomato"style="background-color: #faf8e8;">
+    <header >
+            <div class="logo">
+                <img src="img/Logo.png" alt="AGRIDERA">
+            </div>
+            <div class="search">
+                <div class="search-box">
+                <input type="text" placeholder="Search">
+                <a href="#"><img src="img/icon/ico_search.png" alt="Search img" class="search-img"></a>
+                </div>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+            <div class="podmeny">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#company-profile">Company Profile</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#rnd">R & D</a></li>
+                        <li><a href="ContactUs.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>  
+    </header> 
+</div>
+    <div class="im3">
+        <img src="img/An6.jpg" alt="Pomid">
+    </div>
+    <div class="bg3">
+        <div class="Text1">
+            <h1>Agridera Fresh Market Pineapple Hybrids</h1>
+            <img src="img/Union.png" alt="Union">
+            <h3>Agridera aims to be one of the world's leading companies in the breeding, production, and marketing of Pineapple seeds.<b>We invest intensively in research and development to provide solutions to growers and consumers in numerous countries around the world.</b> In particular, we breed improved disease-resistant cultivars adapted to different markets globally.</h3>
+            <h3>Pineapples are a popular ingredient in many households, whether in their fresh, spike-covered form or the more manageable canned variety. When we shop for pineapples at the grocery store, we rarely check to see the variety in the way that we would with apples, but they come in all shapes, sizes, and flavors.</h3>
+            <h3>From the widely available Smooth Cayenne to the slightly less well-known Pernambuco or Brecheche, each distinct pineapple has its own balance of sweetness and acidity, making them suited to a variety of culinary uses.</h3>
+        </div>
+        <div class="highlight-box">
+            Agirdera Pineapple breeding programs are focusing on three main segments: Greenhouse Indeterminate Pineapplees, Open-field Indeterminate Pineapplees, and Bush Type Open-field Pineapplees.
+        </div>
+        <div class="container2">
+            <div class="card2">
+                <h3>Greenhouse Pineapple Breeding Program</h3>
+                <hr>
+                <p><strong>This breeding is aimed for the Spanish and Turkish markets.</strong> 
+                For single and cluster picks, round fruit shape and resistances of TYLCV, TSWV, Nematodes and FORL 
+                (Fusarium oxysporum f.sp. radicis-lycopersici). Some hybrids may include more resistances, such as 
+                Cladosporium and Leveillula Taurica (Lv).</p>
+            </div>
+    
+            <div class="card2">
+                <h3>Open-field Indeterminate Pineapplees</h3>
+                <hr>
+                <p><strong>This breeding is for Brazilian, Moroccan, and Turkish markets.</strong> 
+                The main focus is on large round shape fruits (200 grams plus); and resistances of TYLCV, TSWV, 
+                Nematodes and FORL. In the near future, F3 (Fusarium oxysporum f.sp. lycopersici) will be included 
+                as basic resistance in our cultivars.</p>
+            </div>
+    
+            <div class="card2">
+                <div class="three">
+                    <h3>Open-field Bush Type Pineapplees</h3>
+                </div>
+                <hr>
+                <p><strong>This breeding is for Mediterranean markets.</strong> 
+                We breed round and elongated shapes, standard sizes (140-180 grams), and beef sizes (min. 180 grams up to 
+                300 grams and more). We combine the resistances of TYLCV, TSWV and Nematodes as basic resistances in our hybrids. 
+                However, some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv).</p>
+            </div>
+        </div>
+        <div class="highlight-box">
+            <h3>Agridera operates through international and local distributers around the world. </h3>
+        </div>
+        <article id="app">
+            <div class="gallery" style="max-width: 56%; padding-left:21%">
+                <div class="card3" style="display:contents; ">
+                    <div class="tomatoItem col-md-4" v-if="products" v-for="p in products" :key="p.id">
+                        <div class="col-md-12">
+                            <div class="tomatoImg">
+                                <img :src="'img/' + p.image" :alt="p.title" style="max-width: 350px;max-height: 320px;">
+
+                            </div>
+                            <div class="tomatoInfo" style="background-color: white;padding: 10px;margin-top: 0%; box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);text-align: center;">
+                                <a :href="'TomatoOne.html#'+p.id"><b style="font-weight: 700; font-size: 20px; line-height: 142.7%;color: #57984C; ">{{ p.title }}</b></a>
+                                <br>
+                                <p style="font-size: 14px;color: #57984C;margin: 0;font-weight: 400; font-size: 16px;line-height: 142.7%;" >{{ p.short_text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </article>
+    </div>
+    <div class="back2">
+        <div class="podfuter">
+            <nav>
+                <ul>
+                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="#">MANAGEMENT</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">R & D</a></li>
+                    <li><a href="#">LINKS</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><img src="img/icon/Ico_in.png" alt="IN"></a>
+                <a href="#"><img src="img/icon/Ico_inst.png" alt="Instagram"></a>
+                <a href="#"><img src="img/icon/Ico_tube.png" alt="Youtube"></a>
+                <a href="#"><img src="img/icon/Ico_tw.png" alt="Twiter"></a>
+                <a href="#"><img src="img/icon/Ico_fb.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </div>
+    <div class="futer">
+        <a href="#"><h4>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</h4></a>
+    </div>
+</body>
+</html>
